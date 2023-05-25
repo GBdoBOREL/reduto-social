@@ -81,16 +81,27 @@ header {
     
 }
 
+.especialidades { /*seção das especialidades*/
+    width: 100%;
+    position: relative;
+    padding: 60px 25px;
+    text-align: center;
+    display: inline-block;
+    background-image: url(img/background-01.jpg);
+    background-position: center;
+    opacity: 1;
+}
+
 .paralax {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 65px;
-    background-image: url(img/prato.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.4;
+    background-image: url(img/prato.jpg);
 }
 
 .home > h1 {
@@ -102,15 +113,6 @@ header {
     font-size: 30px;
     font-family: Lato;
     letter-spacing: 4px;
-}
-
-.especialidades { /*seção das especialidades*/
-    width: 100%;
-    padding: 60px 25px;
-    text-align: center;
-    display: inline-block;
-    background-image: url(img/background-01.jpg);
-    background-position: center;
 }
 
 .especialidades > h1 {
@@ -128,12 +130,35 @@ header {
 
 .cards-ep {
     width: 350px;
-    height: 350px;
+    height: 45vh;
     margin: 15px;
     display: inline-block;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 11px;
     transition: 0.5s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.623);
+}
+
+.rounded-cornes{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.baixo-ep > h3::after{
+    box-shadow: 2px 2px 2px #f56f1c81;;
+    margin-left: 0px;
+    margin-top: 11px;
+    width: 111px;
+    height: 2px;
+    border-bottom: 2px solid;
+    display: block;
+    background-color: #e85d04;
+    position: relative;
+    content: "";
+
 }
 
 .cards-ep:hover {
@@ -141,6 +166,7 @@ header {
 }
 
 .cima-ep { /*parte de cima do card*/
+    
     height: 60%;
     width: 100%;
 }
@@ -151,7 +177,7 @@ header {
     background-size: cover;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    
 }
 
 .img-02 {
@@ -160,7 +186,7 @@ header {
     background-size: cover;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+   
 }
 
 .img-03 {
@@ -169,14 +195,15 @@ header {
     background-size: cover;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    
 }
 
 .baixo-ep { /*parte de baixo do card*/
     height: 40%;
     width: 100%;
-    padding: 20px;
+    padding: 16px;
     text-align: start;
+   
 }
 
 .baixo-ep > h3 {
@@ -184,7 +211,6 @@ header {
     letter-spacing: 2px;
     color: #e85d04;
     padding-bottom: 10px;
-    border-bottom: 4px solid #e85d04;
 }
 
 .baixo-ep > p {
@@ -266,9 +292,11 @@ header {
 }
 
 #sobremesas {
-    background-image: url(img/background-02.jpg);
+    background-image: url(img/background-01.jpg);
+    /* background-image: url(img/background-02.jpg); */
     height: 100%;
     width: 100%;
+    
 }
 
 .titulo-03 {
@@ -283,25 +311,6 @@ header {
     font-family: 'Courier New';
     text-transform: uppercase;
     text-align: center;
-}
-
-.cards-sb {
-    display: inline-block;
-    height: 350px;
-    width: 350px;
-    margin: 15px;
-    background-color: white;
-    border-radius: 3px;
-    transition: 0.5s;
-}
-
-.cards-sb:hover {
-    transform: scale(1.04);
-}
-
-.cima-sb { /*parte de cima do card*/
-    height: 70%;
-    width: 100%;
 }
 
 .img-04 {
@@ -338,54 +347,6 @@ header {
     line-height: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-.eventos { /*seção dos eventos*/
-    display: inline-block;
-    align-items: center;
-    padding: 25px;
-    border-top: 1px solid #6a040f;
-}
-
-.card {
-    display: inline-block;
-    text-align: center;
-    padding: 20px 20px 5px 20px;
-    margin: 10px;
-    border: 3px solid #6a040f;
-    box-shadow: 0px 10px 40px #6a040e6b;
-    border-radius: 20px;
-}
-
-.card > h3 {
-    font-weight: 600;
-    margin: 20px;
-    text-transform: uppercase;
-    color: #6a040f;
-    border-left: 3px solid #6a040f;
-    padding-left: 7px;
-}
-
-.card > p {
-    text-align: start;
-    padding-left: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 25px;
-}
-
-.card > h4 {
-    margin-bottom: 20px;
-}
-
 .btn-comprar {
     color: #6a040f;
     border: 3px solid #6a040f;
@@ -405,34 +366,8 @@ header {
     transform: scale(1.04);
 }
 
-.img-1 {
-    background-image: url('img/casamento.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-}
-
-.img-2 {
-    background-image: url('img/aniversario.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-}
-
-.img-3 {
-    background-image: url('img/formatura.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
+html{
+    scroll-behavior: smooth;
 }
 
 
