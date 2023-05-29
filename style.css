@@ -130,7 +130,7 @@ header {
 
 .cards-ep {
     width: 350px;
-    height: 45vh;
+    height: 56vh;
     margin: 15px;
     display: inline-block;
     background-color: white;
@@ -148,7 +148,8 @@ header {
 
 
 .baixo-ep > h3::after{
-    box-shadow: 2px 2px 2px #f56f1c81;;
+
+    box-shadow: 2px 2px 2px #f56f1c81;
     margin-left: 0px;
     margin-top: 11px;
     width: 111px;
@@ -179,6 +180,116 @@ header {
     width: 100%;
     
 }
+
+
+.maps{
+    width: 35%;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 63%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 35px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+.parteMaps{
+    display: flex;
+    margin: auto 0;
+}
+
+iframe{
+    border-radius: 19px;
+    width: 100%;
+
+}
+.endereco-section > .container > .maps > iframe{
+    width: 100%;
+    display: flex;
+}
+.endereco-section{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.endereco-section  > .container > h2{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.endereco-section> .container > p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* margin-left: 70%; */
+
+}
+
+.parteFotos{
+    margin-top: -447px;
+}
+i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  i#prev {
+    left: 25px;
+  }
+  i#next {
+    right: 25px;
+  }
+  .image-container {
+    height: 320px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 10px solid #fff;
+    object-fit: cover;
+  }
+
+.wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #343f4f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+.wrapper {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
 
 .img-02 {
     background-image: url(img/dobradinha.jpg);
@@ -218,6 +329,7 @@ header {
     line-height: 25px;
     margin-top: 15px;
 }
+
 
 .horarios { /*seção dos horários*/
     display: inline-block;
