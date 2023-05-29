@@ -104,94 +104,53 @@ header {
     letter-spacing: 4px;
 }
 
-.especialidades { /*seção das especialidades*/
+.especialidades { /*inicio da seção das especialidades*/
     width: 100%;
-    padding: 60px 25px;
-    text-align: center;
-    display: inline-block;
-    background-image: url(img/background-01.jpg);
-    background-position: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
 }
 
-.especialidades > h1 {
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-.especialidades > h3 {
-    font-size: 30px;
-    font-family: Lato;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 60px;
-}
-
-.cards-ep {
-    width: 350px;
+.container-espc {
+    width: 400px;
     height: 350px;
-    margin: 15px;
-    display: inline-block;
-    background-color: white;
-    border-radius: 5px;
-    transition: 0.5s;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
 }
 
-.cards-ep:hover {
-    transform: scale(1.04);
-}
-
-.cima-ep { /*parte de cima do card*/
+.card-img2 {
+    width: 100%;
     height: 60%;
-    width: 100%;
-}
-
-.img-01 {
-    background-image: url(img/sobrecoxa.jpg);
+    background-image: url(img/sobrecoxa.JPG);
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
+    transition: 0.6s;
 }
 
-.img-02 {
-    background-image: url(img/dobradinha.jpg);
+.card-img2:hover {
+    height: 100%;
+}
+
+.card-img3 {
+    width: 50%;
+    height: 40%;
+    background-image: url(img/dobradinha.JPG);
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
 }
 
-.img-03 {
+.card-img4 {
+    width: 50%;
+    height: 40%;
     background-image: url(img/costela.jpeg);
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
 }
 
-.baixo-ep { /*parte de baixo do card*/
-    height: 40%;
-    width: 100%;
-    padding: 20px;
-    text-align: start;
-}
 
-.baixo-ep > h3 {
-    font-size: 22px;
-    letter-spacing: 2px;
-    color: #e85d04;
-    padding-bottom: 10px;
-    border-bottom: 4px solid #e85d04;
-}
-
-.baixo-ep > p {
-    color: rgb(92, 92, 92);
-    line-height: 25px;
-    margin-top: 15px;
-}
 
 .horarios { /*seção dos horários*/
     display: inline-block;
@@ -340,110 +299,200 @@ header {
 
 
 
-
-
-
-
-
-
-
-.eventos { /*seção dos eventos*/
-    display: inline-block;
+.avaliacoes { /*inicio da seção das avaliações*/
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    text-align: center;
     align-items: center;
-    padding: 25px;
-    border-top: 1px solid #6a040f;
+    justify-content: space-around;
+    background-image: url(img/buffet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.card {
+.card-avli {
+    width: 45%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+.card-img1 {
+    width: 98px;
+    height: 15px;
+    margin-bottom: 8px;
     display: inline-block;
-    text-align: center;
-    padding: 20px 20px 5px 20px;
-    margin: 10px;
-    border: 3px solid #6a040f;
-    box-shadow: 0px 10px 40px #6a040e6b;
-    border-radius: 20px;
-}
-
-.card > h3 {
-    font-weight: 600;
-    margin: 20px;
-    text-transform: uppercase;
-    color: #6a040f;
-    border-left: 3px solid #6a040f;
-    padding-left: 7px;
-}
-
-.card > p {
-    text-align: start;
-    padding-left: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 20px;
-    line-height: 25px;
-}
-
-.card > h4 {
-    margin-bottom: 20px;
-}
-
-.btn-comprar {
-    color: #6a040f;
-    border: 3px solid #6a040f;
-    display: block;
-    padding: 15px 10px 15px 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 10px 40px #6a040e6b;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: 0.5s;
-}
-
-.btn-comprar:hover {
-    background-color: #ffc83d;
-    transform: scale(1.04);
-}
-
-.img-1 {
-    background-image: url('img/casamento.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
+    background-image: url(img/estrela.png);
     background-position: center;
-    background-size: cover;
+    background-size: repeat;
 }
 
-.img-2 {
-    background-image: url('img/aniversario.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
+.card-avli > p {
+    font-size: 25px;
+    color: rgb(31, 31, 31);
+    font-family: sans-serif;
+    margin-bottom: 14px;
 }
 
-.img-3 {
-    background-image: url('img/formatura.png');
-    width: 300px;
-    height: 200px;
-    border: 3px solid #6a040f;
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-}
+.card-avli > h3 {
+    font-size: 18px;
+    font-family: Times;
+    color: rgb(31, 31, 31);
+} /*fim da seção das avaliações*/
 
 
-footer { /*seção dos contatos*/
-    color: #f3f3f3;
-    padding: 5px;
+
+footer { /*inicio da seção do rodapé*/
+    width: 100%;
     background-color: black;
+}
+
+.informacoes {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(105, 105, 105);
+    background-color: white;
+}
+
+.card-inf1 {
+    width: 40%;
+    padding-right: 20px;
+    border-right: 5px solid #e85d04;
+    text-align: start;
+}
+
+.card-inf1 > h1 {
+    color: #e85d04;
+    margin-bottom: 15px;
+}
+
+.card-inf1 > p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.card-inf1 > p > strong {
+    color: #e85d04;
+}
+
+.card-inf2 {
+    width: 30%;
+    height: 300px;
+    margin: 0px 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(105, 105, 105);
+    background-image: url(img/mae.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-inf3 {
+    height: 300px;
+    padding-left: 120px;
+    text-align: center;
+    border-left: 5px solid #e85d04;
+}
+
+.card-inf3 > h1 {
+    color: #e85d04;
+    margin-bottom: 15px;
+}
+
+.txt {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e85d04;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(img/facebook.png);
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.facebook:hover {
+    transform: scale(1.2);
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e85d04;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(img/instagram.png);
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.instagram:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e85d04;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url(img/whatsapp.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+}
+
+.desenvolvido {
+    width: 100%;
+    padding: 25px;
+    color: rgb(105, 105, 105);
     text-align: center;
 }
 
-footer > section > span {
-    font-weight: 600;
-    font-size: 20px;
+@media screen and (max-width: 768px){
+    .informacoes {
+        flex-wrap: wrap;
+    }
+
+    .card-inf1 {
+        width: 60%;
+        padding-right: 50px;
+        border-right: 0px;
+    }
+
+    .card-inf2 {
+        width: 40%;
+        height: 300px;
+        margin: 0px;
+    }
+
+    .card-inf3 {
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+        padding-left: 0px;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-inf3 > h1 {
+        width: 100%;
+        padding: 10px;
+    }
 }
