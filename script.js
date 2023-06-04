@@ -3,39 +3,38 @@ const wrapper = document.querySelector(".wrapper"),
     images = document.querySelector("img"),
    buttons = Array.from(document.querySelectorAll(".button"))
 
-let imageIndex = 1, interValid;
+let imageIndex = 0, interValid;
 
 
-//Muda imagem automaticamente para a proxima a cada 2 segundos
-// function autoSlide(){
-//     interValid = setInterval(() => {
-//         if(imageIndex >= 0){
 
-//             slideImage(++imageIndex)
-//         }else{
-//             slideImage(--imageIndex)
-//         }
-//     }, 2000);
-// }
+function autoSlide(){
+    interValid = setInterval(() => {
+        if(imageIndex >= 0){
 
-// autoSlide();
+            slideImage(++imageIndex)
+        }else{
+            slideImage(--imageIndex)
+        }
+    }, 3000);
+}
+
+autoSlide();
 
 
 //Função que vai mudar imagem
 const slideImage = ()  =>{
     
     //Calculando o proximo update
-   // imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
     
-    if(imageIndex=== images.length){
+    if(imageIndex === images.length){
         imageIndex = 0
     }else{
-        images.length  = -1;
+        images.length  = 6;
     }
     
     
     //Atualiza o carossel para mostrar a imagem escolhida
-    carousel.style.transform = `translate(-${imageIndex * 35}%)`;
+    carousel.style.transform = `translate(-${imageIndex * 100}%)`;
     
 };
 
