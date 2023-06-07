@@ -1,51 +1,46 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
     outline: none;
     list-style: none;
+    text-decoration: none;
     font-family: Helvetica;
-}
+    box-sizing: border-box;
+} /*regras gerais*/
 
 body {
-    max-width: 100vw;
-    max-height: 100vh;
-    color: white;
-}
+    width: 100vw;
+} /*regras do corpo*/
 
 header {
     width: 100%;
-    height: 0 auto;
     padding: 5px;
-    background-color: black;
-}
-
-.menu {
-    height: 0 auto;
-    background-color: black;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
-}
+    background-color: black;
+    transition: 2s;
+} /*regras do menu*/
+
 
 .logo{
-    color: #f3f3f3;
-    margin: 5px;
-    text-transform: uppercase;
+    margin: 0px 0px 0px 10px;
+    color: white;
     font-size: 20px;
-    font-weight: 600;
-    font-family: 'Courier New';
     text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New';
+    text-transform: uppercase;
 }
 
 .logo > h4 {
-    color: #f3f3f3;
-    text-transform: uppercase;
+    color: white;
     font-size: 10px;
     font-weight: 600;
     text-align: center; 
     letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .itens {
@@ -55,12 +50,11 @@ header {
 }
 
 .btn-menu {
-    color: #f3f3f3;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-left: 10px;
     margin-right: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
@@ -72,82 +66,48 @@ header {
     transform: scale(1.04);
 }
 
-.home { /*seção paralax*/
-    width: 100%;
-    padding: 291px 0px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: black;
-    
-}
-
-.paralax {
+section {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 65px;
-    background-image: url(img/prato.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.4;
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.home { /*seção paralax*/
+    width: 100%;
+    height: 100vh;
+    padding: 200px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
 }
 
 .home > h1 {
+    width: 70%;
     font-size: 70px;
     letter-spacing: 4px;
+    font-weight: lighter;
 }
 
 .home > h3 {
+    width:50%;
+    padding: 10px;
     font-size: 30px;
     font-family: Lato;
     letter-spacing: 4px;
-}
-
-.especialidades { /*inicio da seção das especialidades*/
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid black;
-}
-
-.container-espc {
-    width: 400px;
-    height: 350px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-}
-
-.card-img2 {
-    width: 100%;
-    height: 60%;
-    background-image: url(img/sobrecoxa.JPG);
-    background-position: center;
-    background-size: cover;
-    transition: 0.6s;
-}
-
-.card-img2:hover {
-    height: 100%;
-}
-
-.card-img3 {
-    width: 50%;
-    height: 40%;
-    background-image: url(img/dobradinha.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.card-img4 {
-    width: 50%;
-    height: 40%;
-    background-image: url(img/costela.jpeg);
-    background-position: center;
-    background-size: cover;
+    font-weight: lighter;
+    border-radius: 10px;
+    border: 3px solid #e85d04;
 }
 
 
@@ -349,37 +309,29 @@ footer { /*inicio da seção do rodapé*/
     background-color: black;
 }
 
-.informacoes {
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    color: rgb(105, 105, 105);
-    background-color: white;
-}
-
-.card-inf1 {
+.card-inf01 {
     width: 40%;
     padding-right: 20px;
     border-right: 5px solid #e85d04;
     text-align: start;
 }
 
-.card-inf1 > h1 {
+.card-inf01 > h1 {
     color: #e85d04;
     margin-bottom: 15px;
 }
 
-.card-inf1 > p {
+.card-inf01 > p {
     font-size: 15px;
     line-height: 20px;
+
 }
 
-.card-inf1 > p > strong {
+.card-inf01 > p > strong {
     color: #e85d04;
 }
 
-.card-inf2 {
+.card-inf02 {
     width: 30%;
     height: 300px;
     margin: 0px 40px;
@@ -390,14 +342,14 @@ footer { /*inicio da seção do rodapé*/
     background-size: cover;
 }
 
-.card-inf3 {
+.card-inf03 {
     height: 300px;
     padding-left: 120px;
     text-align: center;
     border-left: 5px solid #e85d04;
 }
 
-.card-inf3 > h1 {
+.card-inf03 > h1 {
     color: #e85d04;
     margin-bottom: 15px;
 }
