@@ -20,7 +20,7 @@
                 <h4>Restaurante e Petiscaria</h4>
             </a>
             <ul class="itens"> <!--itens do menu-->
-                <a href="#" class="btn-menu">LOCALIZAÇÃO</a>
+                <a href="#localizacao" class="btn-menu">LOCALIZAÇÃO</a>
                 <a href="#horarios" class="btn-menu">HORÁRIOS</a>
                 <a href="#" class="btn-menu">EVENTOS</a>
                 <a href="#informacoes" class="btn-menu">CONTATO</a>
@@ -35,7 +35,7 @@
             <h3>Mais procurada da Palhoça</h3>
             <div class="paralax"></div>
         </section>
-<!-- 
+        <!-- 
         <section class="especialidades"> inicio da seção das especialidades
             <div class="container-espc">
                 <div class="card-img2"></div>
@@ -45,7 +45,7 @@
         </section> fim da seção das especialidades 
 -->
 
-        <section class="horarios" id="horarios"> <!--seção de horários-->
+        <section class="horarios" id="horarios" loading="lazy"> <!--seção de horários-->
             <h1 class="titulo-02">Horários de Atendimento das 11hs as 14hs</h1>
             <h3 class="subtitulo-02">Não abrimos as Segundas-Feiras. Consultar abertura em fériados, por WhatsApp</h3>
 
@@ -74,7 +74,7 @@
             </div>
 
             <div class="cards-hr">
-                <div class="cima-hr">
+                <div class="cima-hr" loading="lazy">
                     <h3>Quinta-Feira</h3>
                 </div>
 
@@ -86,7 +86,7 @@
             </div>
 
             <div class="cards-hr">
-                <div class="cima-hr">
+                <div class="cima-hr" loading="lazy">
                     <h3>Sexta-Feira</h3>
                 </div>
 
@@ -98,7 +98,7 @@
             </div>
 
             <div class="cards-hr">
-                <div class="cima-hr">
+                <div class="cima-hr" loading="lazy">
                     <h3>Sábado</h3>
                 </div>
 
@@ -110,7 +110,7 @@
             </div>
 
             <div class="cards-hr">
-                <div class="cima-hr">
+                <div class="cima-hr" loading="lazy">
                     <h3>Domingo</h3>
                 </div>
 
@@ -160,19 +160,57 @@
             </div>
         </section>
 
-
         <section class="avaliacoes"> <!--inicio da seção de avaliações-->
-            <div class="card-avli">
-                <div class="card-img1"></div>
-                <p>"Um lugar que une comida caseira deliciosa que cabe perfeitamente no bolso."</p>
-                <h3>~Fernando Silveira</h3>
-            </div>
 
-            <div class="card-avli">
-                <div class="card-img1"></div>
-                <p>"Buffet com diversas opções e de qualidade e preço atrativo"</p>
-                <h3>~Diego Dantas</h3>
-            </div>
+            <div class="slider">
+                <!-- <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4"> -->
+
+                <div class="slides"> 
+                    <div class="overflow">
+                      
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <div class="card-img1"></div>
+                                    <p>"Um lugar que une comida caseira deliciosa que cabe perfeitamente no bolso."</p>
+                                    <h3>~Fernando Silveira</h3>
+                                </div>
+                            </div>
+
+                            <div class="slide  slide_2">
+                                <div class="slide-content">
+                                    <div class="card-img1"></div>
+                                    <p>"Buffet com diversas opções e de qualidade e preço atrativo"</p>
+                                    <h3>~Diego Dantas</h3>
+                                </div>
+                            </div>
+
+                            <div class="slide  slide_3">
+                                <div class="slide-content">
+                                    <div class="card-img1"></div>
+                                    <p>"O almoço foi no dia das mãe e estava tudo ótimo, comida muito saborosa e as
+                                        pessoas
+                                        bem
+                                        receptivas."</p>
+                                    <h3>~Junio</h3>
+                                </div>
+                            </div>
+
+                            <div class="slide  slide_4">
+                                <div class="slide-content">
+                                    <div class="card-img1"></div>
+                                    <p>"Amo essa comida, caseira e muito especial. Super indico e sempre levo minha
+                                        familia
+                                        🤗
+                                        Atendimento nota 10 e preço junsto"</p>
+                                    <h3>~Trya</h3>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
         </section> <!--fim da seção de avaliações-->
 
 
@@ -197,55 +235,62 @@
             <div class="card-inf3"> <!--contato-->
                 <h1>Contato</h1>
 
-                <a href="https://www.facebook.com/redutosocial/" target="_blank"><input type="button" class="facebook">
+                <a href="https://www.facebook.com/redutosocial/" target="_blank" class="botoesMidia"><input
+                        type="button" class="facebook">
                     <h3 class="txt">Reduto Social</h3>
                 </a>
 
-                <a href="https://www.instagram.com/redutosocial/" target="_blank"><input type="button"
-                        class="instagram">
+                <a href="https://www.instagram.com/redutosocial/" target="_blank" class="botoesMidia"><input
+                        type="button" class="instagram">
                     <h3 class="txt">@redutosocial</h3>
                 </a>
 
-                <a href="http://api.whatsapp.com/send?phone=5548998052056" target="_blank"><input type="button"
-                        class="whatsapp">
+                <a href="http://api.whatsapp.com/send?phone=5548998052056" target="_blank" class="botoesMidia"><input
+                        type="button" class="whatsapp">
                     <h3 class="txt">(48) 99805-2056</h3>
                 </a>
             </div>
         </section> <!--fim da seção de contato-->
 
 
-        <section class="endereco-section">
+        <section class="endereco-section" id="localizacao">
 
-            <div class="container">
+            <div class="container-endereco">
 
 
-                <h2>Conheça o Reduto!</h2>
+                <h2 class="Titulo-Endereco">Conheça o Reduto!</h2>
                 <div class="parteMaps">
 
                     <div class="maps">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8406.34434024072!2d-48.69332732844007!3d-27.642090335706968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273518c581f595%3A0xc0bebc65e0d05183!2sReduto%20Social%20Restaurante!5e0!3m2!1spt-BR!2sbr!4v1685147944692!5m2!1spt-BR!2sbr"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
                     </div>
                 </div>
-
                 <div class="parteFotos">
 
                     <section class="wrapper">
                         <i class="fa-solid fa-arrow-left button" id="prev"></i>
                         <div class="image-container">
                             <div class="carousel">
-                                <img src="img/5 motivos.png" alt="" />
-                                <img src="img/1 - estacionamento.jpg" alt="" />
-                                <img src="img/2 - ambiente climatizado.jpg" alt="" />
-                                <img src="img/3 - ambiente .jpg" alt="" />
-                                <img src="img/4 - Comida caseira.jpg" alt="" />
-                                <img src="img/5 - sobremessas.jpg" alt="" />
+                                <img src="img/5 motivos.png" alt="" loading="lazy" />
+                                <img src="img/1 - estacionamento.jpg" alt="" loading="lazy" />
+                                <img src="img/2 - ambiente climatizado.jpg" alt="" loading="lazy" />
+                                <img src="img/3 - ambiente .jpg" alt="" loading="lazy" />
+                                <img src="img/4 - Comida caseira.jpg" alt="" loading="lazy" />
+                                <img src="img/5 - sobremessas.jpg" alt="" loading="lazy" />
                             </div>
                             <i class="fa-solid fa-arrow-right button" id="next"></i>
                         </div>
+
+
                 </div>
+
+                <p style="width: 100%; display: flex; justify-content: center;">Av. Tipuanas 326, Palhoça<br>
+                    SC, 88136-300
+                </p>
+            </div>
 
         </section>
 
