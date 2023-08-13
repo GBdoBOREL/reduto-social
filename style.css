@@ -21,57 +21,85 @@ body {
     color: white;
 }
 
-
-.slide-content p{
-
+.slide-content p {
+    padding: 20px;
     font-size: 17px;
 }
 
-.slide{
-    
+.nav-in {
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    z-index: 1;
+    background-color: #0000003d;
 
 }
-.slider{
-    display: inline-block;
+
+.navigation {
+    display: flex;
     justify-content: center;
-    margin: auto;
     align-items: center;
-    position: relative;
+    width: 100%;
+    padding: 33px;
 }
 
-.slide-content{ 
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
-    background-color: #00000063;
+.bar:hover {
+    background-color: rgb(240, 236, 231);
+}
+
+.slide {
+
+    position: relative;
+    transition: 0.6s;
+    display: flex;
+    width: 15em;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18%;
+    height: 200px;
+}
+
+.slider {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    width: 90em;
+    height: 300px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide-content {
+
+    background-color: #0000008a;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    width: 35em;
-    padding: 11px;
-    height: 10em;
+    width: 400px;
+    height: 100%;
     flex-shrink: 0;
-
 }
-.slides{
-    
-    justify-content: center;
+
+.slides {
     align-items: center;
-    text-align: center;
-    z-index: 10;
-    /* position: relative; */
-    display: inline-block;
-
+    display: flex;
 }
 
-.slides input {
-    display: none;
-}
+
+
 
 .menu {
     height: 0 auto;
@@ -100,10 +128,26 @@ body {
     letter-spacing: 5px;
 }
 
+.bars-menu {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+
+.bars-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
 .itens {
+  
     display: flex;
     padding: 5px;
-    margin: 5px;
+    transition: transform 0.4s ease-in;
+
 }
 
 .btn-menu {
@@ -117,6 +161,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     transition: 0.5s;
+    z-index: 20;
 }
 
 .btn-menu:hover {
@@ -124,25 +169,31 @@ body {
     transform: scale(1.04);
 }
 
-.home {
+
+#text-home {
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.home {
+    display: flex;
     height: 100vh;
-    align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
     background-color: black;
-    max-height: 37.0;
 }
 
 .paralax {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 65px;
     background-image: url(img/prato.jpg);
     background-position: center;
     background-size: cover;
@@ -150,14 +201,15 @@ body {
     opacity: 0.4;
 }
 
-.home>h1 {
-    font-size: 70px;
+.home>#text-home>h1 {
+    width: 100%;
+    font-size: 48px;
     letter-spacing: 4px;
 }
 
-.home>h3 {
-    font-size: 30px;
-    font-family: Lato;
+.home>#text-home>h3 {
+    width: 100%;
+    font-size: 25px;
     letter-spacing: 4px;
 }
 
@@ -198,6 +250,7 @@ body {
 
 }
 
+
 .Titulo-Endereco {
     width: 100%;
     justify-content: center;
@@ -212,7 +265,6 @@ body {
     width: 100%;
     display: flex;
     box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.63);
-    background-color: rgb(0, 0, 0);
     margin-top: 60px;
 }
 
@@ -306,7 +358,6 @@ i#next {
     width: 100%;
     border-radius: 18px;
     border: 10px solid #fff;
-    object-fit: cover;
 }
 
 .wrapper i.button {
@@ -450,6 +501,7 @@ i#next {
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
+
 .cards-hr {
 
     display: inline-block;
@@ -548,6 +600,7 @@ i#next {
     height: 100%;
     width: 100%;
 }
+
 .baixo-sb {
     /*parte de baixo do card*/
     height: 30%;
@@ -566,12 +619,15 @@ i#next {
     color: rgb(92, 92, 92);
     line-height: 25px;
 }
-.gallery-av{        
+
+.gallery-av {
     display: flex;
     flex-flow: row nowrap;
 
 }
-.left-slider, .right-slider{
+
+.left-slider,
+.right-slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -579,11 +635,11 @@ i#next {
     bottom: 0;
 }
 
-.wrapper-av{
+.wrapper-av {
     overflow-x: auto;
 }
 
-.container-av{
+.container-av {
     position: relative;
     padding: 15px;
     max-width: 640px;
@@ -592,14 +648,13 @@ i#next {
 
 .avaliacoes {
     /*inicio da seção das avaliações*/
-    width: 100%;
-    padding: 40px;
     display: flex;
-    overflow-x: hidden;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
     background-image: url(img/buffet.jpg);
+    /* background-color: red; */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -610,18 +665,19 @@ i#next {
     padding: 10px 20px;
     border-radius: 10px;
     margin: 20px;
-    background-color:rgba(255, 255, 255, 0.212);
+    background-color: rgba(255, 255, 255, 0.212);
     flex-shrink: 0;
 }
 
 .card-img1 {
     width: 98px;
     height: 15px;
-    display: flex;
+    margin-top: 5%;
+   
     justify-content: center;
     align-items: center;
     background-image: url(img/estrela.png);
-    position: absolute;
+    /* position: absolute; */
     filter: invert(100%);
     background-position: center;
     background-size: repeat;
@@ -639,6 +695,7 @@ i#next {
     font-family: Times;
     color: rgb(31, 31, 31);
 }
+
 /*Fim da seção das avaliações*/
 
 footer {
@@ -661,6 +718,7 @@ footer {
     border-right: 5px solid #e85d04;
     text-align: start;
     display: flex;
+    height: 29em;
     align-content: center;
     justify-content: center;
     margin: 5px;
@@ -669,28 +727,29 @@ footer {
 
 }
 
-.card-inf1>h1 {
+.card-inf1>div>h1 {
     color: #e85d04;
     margin-bottom: 15px;
 }
 
-.card-inf1>p {
-    font-size: 17px;
-    line-height: 20px;
+.card-inf1>div>p {
+    font-size: 18px;
+    line-height: 16px;
 }
 
-.card-inf1>p>strong {
+.card-inf1>div>p>strong {
     color: #e85d04;
 }
 
 .card-inf2 {
-    width: 640px;
-    height: 640px;
+    width: 500px;
+    height: 380px;
     margin: 0px 20px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgb(105, 105, 105);
     background-image: url(img/mae.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .card-inf3 {
@@ -762,7 +821,7 @@ footer {
 }
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -782,32 +841,67 @@ html{
     width: 100%;
     margin-top: 12%;
     height: 6em;
+
+}
+
+.itens.active{
+    transform: translateX(0%);
+  
     
 }
 
 
 @media screen and (max-width: 768px) {
+
+    .itens a {
+        margin: 50px;
+    }
+
+
+
+    .itens {
+
+        top: 5.6vh;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: #23232e;
+        flex-direction: column;
+        align-items: center;
+        z-index: 30;
+        transform: translateX(100%);
+    }
+
+    .itens>a {
+
+        font-size: 20px;
+    }
+
+
+    .bars-menu {
+        right: 2px;
+        display: block;
+    }
+
     .informacoes {
         flex-wrap: wrap;
     }
 
     .card-inf1 {
-        border-right: 0px;
+        border-right: 0;
+        display: contents;
+
     }
 
     .card-inf2 {
-
-        width: 500px;
+        width: 400px;
         background-position: revert;
-        height: 366px;
-        background-size: contain;
+        height: 300px;
         display: flex;
         margin-top: 22px;
-
     }
 
     .card-inf3>h1 {
-        
         position: absolute;
     }
 
@@ -815,7 +909,7 @@ html{
 
         display: flex;
         flex-wrap: wrap;
-        width: 26%;
+        width: 30%;
         margin-top: 12%;
         height: 4em;
         justify-content: center;
@@ -823,10 +917,36 @@ html{
 
     }
 
+    .btn-menu {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: 0;
+        text-align: center;
+
+
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    a:hover,
+    a.active {
+        background-color: none;
+        color: orange;
+    }
+
     .card-inf3 {
 
         width: 100%;
-        height: 148px;
+        height: 95px;
         margin-top: 15px;
         padding-left: 0px;
         border: none;
@@ -836,13 +956,16 @@ html{
     }
 
     .card-inf1>p {
+        display: flex;
         font-size: 17px;
-        line-height: 18px;
+        line-height: 20px;
+        flex-wrap: nowrap;
     }
 
     .endereco-section {
         margin: 0 auto;
-        padding: 0 auto;
+        padding: 50px;
+        max-width: 100%;
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -852,20 +975,18 @@ html{
     }
 
     .endereco-section .maps {
-        width: 50em;
+        width: 20em;
         border-radius: 20px;
         display: flex;
-        box-shadow: 5px 5px 5px black;
-        margin: 0 auto;
-        background-color: rgb(0, 0, 0)
     }
 
     .endereco-section .parteFotos {
         width: 100%;
         display: flex;
         justify-content: center;
-        max-width: 301em;
-        margin: 0;
+        max-width: 100em;
+
+
     }
 
     .endereco-section .parteMaps {
@@ -874,41 +995,48 @@ html{
         width: 30em;
         display: flex;
         margin-top: 3em;
-    
+
     }
 
+    #text-home {
+        width: 100%;
 
-    .home>h1 {
-        font-size: 15px;
     }
 
+    .home>#text-home>h1 {
+        font-size: 36px;
+        letter-spacing: 0;
 
-    .home>h3 {
-        font-size: 18px;
+    }
+
+    .home>#text-home>h3 {
+
+        font-size: 20px;
     }
 
     .home {
-        height: 60em;
+        width: 100%;
+
     }
 
     .paralax {
+
         height: 100%;
-        max-height: 60em;
+    }
+
+    .subtitulo-03 {
+        display: none;
+    }
+
+    .slider {
+        width: 40em;
+
     }
 
 
-}
-
-
-@media screen and (max-width: 390px) {
-
-    .paralax {
-        height: 66em;
-        max-height: 70em;
-    }
-
-    .home {
-        height: 67em;
+    .slide {
+        width: 100%;
+        margin-left: 45%;
     }
 
     .card-inf3>h1 {

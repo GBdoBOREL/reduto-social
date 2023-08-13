@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Reduto Social</title>
+    <description></description>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <script src="script.js" defer></script>
+    
 </head>
 
 <body>
@@ -19,20 +20,29 @@
             <a href="#" class="logo">Reduto Social<br>
                 <h4>Restaurante e Petiscaria</h4>
             </a>
+          
             <ul class="itens"> <!--itens do menu-->
+
                 <a href="#localizacao" class="btn-menu">LOCALIZAÇÃO</a>
                 <a href="#horarios" class="btn-menu">HORÁRIOS</a>
-                <a href="#" class="btn-menu">EVENTOS</a>
-                <a href="#informacoes" class="btn-menu">CONTATO</a>
+                <!-- <a href="#" class="btn-menu">EVENTOS</a> -->
+                <a href="#contatos" class="btn-menu">CONTATO</a>
             </ul>
+            <div class="bars-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
         </nav>
     </header>
 
     <main> <!--parte principal do site-->
 
         <section class="home"> <!--seção do paralax-->
-            <h1>A Culinária Caseira</h1>
-            <h3>Mais procurada da Palhoça</h3>
+            <div id="text-home">
+                <h1>A Culinária Caseira</h1>
+                <h3>Mais procurada da Palhoça</h3>
+            </div>
             <div class="paralax"></div>
         </section>
         <!-- 
@@ -43,8 +53,7 @@
                 <div class="card-img4"></div>
             </div>
         </section> fim da seção das especialidades 
--->
-
+    -->
         <section class="horarios" id="horarios" loading="lazy"> <!--seção de horários-->
             <h1 class="titulo-02">Horários de Atendimento das 11hs as 14hs</h1>
             <h3 class="subtitulo-02">Não abrimos as Segundas-Feiras. Consultar abertura em fériados, por WhatsApp</h3>
@@ -160,79 +169,135 @@
             </div>
         </section>
 
+
         <section class="avaliacoes"> <!--inicio da seção de avaliações-->
 
-            <div class="slider">
-                <!-- <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4"> -->
-
-                <div class="slides"> 
-                    <div class="overflow">
-                      
-                            <div class="slide slide_1">
-                                <div class="slide-content">
-                                    <div class="card-img1"></div>
-                                    <p>"Um lugar que une comida caseira deliciosa que cabe perfeitamente no bolso."</p>
-                                    <h3>~Fernando Silveira</h3>
-                                </div>
+            <div class="slider middle">
+                <div>
+                    <div class="slides">
+                        <div class="slide slide1 s1">
+                            <div class="slide-content ">
+                                <div class="card-img1"></div>
+                                <p>"Um lugar que une comida caseira deliciosa que cabe perfeitamente no bolso."</p>
+                                <h3>~Fernando Silveira</h3>
                             </div>
-
-                            <div class="slide  slide_2">
-                                <div class="slide-content">
-                                    <div class="card-img1"></div>
-                                    <p>"Buffet com diversas opções e de qualidade e preço atrativo"</p>
-                                    <h3>~Diego Dantas</h3>
-                                </div>
-                            </div>
-
-                            <div class="slide  slide_3">
-                                <div class="slide-content">
-                                    <div class="card-img1"></div>
-                                    <p>"O almoço foi no dia das mãe e estava tudo ótimo, comida muito saborosa e as
-                                        pessoas
-                                        bem
-                                        receptivas."</p>
-                                    <h3>~Junio</h3>
-                                </div>
-                            </div>
-
-                            <div class="slide  slide_4">
-                                <div class="slide-content">
-                                    <div class="card-img1"></div>
-                                    <p>"Amo essa comida, caseira e muito especial. Super indico e sempre levo minha
-                                        familia
-                                        🤗
-                                        Atendimento nota 10 e preço junsto"</p>
-                                    <h3>~Trya</h3>
-                                </div>
                         </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Buffet com diversas opções e de qualidade e preço atrativo"</p>
+                                <h3>~Diego Dantas</h3>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"O almoço foi no dia das mãe e estava tudo ótimo, comida muito saborosa e as
+                                    pessoas
+                                    bem
+                                    receptivas."</p>
+                                <h3>~Junio</h3>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Amo essa comida, caseira e muito especial. Super indico e sempre levo minha
+                                    familia
+                                    🤗
+                                    Atendimento nota 10 e preço junsto"</p>
+                                <h3>~Trya</h3>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Ótimo ambiente e um atendimento muito bom, sem contar a alimentação de primeira,
+                                    super
+                                    recomendo."</p>
+                                <h3>~Luiz Bento</h3>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Melhor comida da região , caseira ,muito bem preparada e muita variedade todos os
+                                    dias ,
+                                    ótimo atendimento ❤️"</p>
+                                <h3>~Marize Silva</h3>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Amo almoçar lá comida maravilhosa e bem caseira parece comida de Mãe."</p>
+                                <h3>~Marcia Carvalho</h3>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Comida muito saborosa, restaurante organizado, atendimento impecável."</p>
+                                <h3>~João Paulo</h3>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content">
+                                <div class="card-img1"></div>
+                                <p>"Ótima comida, com grande variedade e preço justo. Ótimo atendimento!"</p>
+                                <h3>~Juliana</h3>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
+            </div>
+
+            <div class="navigation">
+                <div class="nav-in">
+                    <label for="slide1" class="bar"></label>
+                    <label for="slide2" class="bar"></label>
+                    <label for="slide3" class="bar"></label>
+                    <label for="slide4" class="bar"></label>
+                </div>
+            </div>
 
         </section> <!--fim da seção de avaliações-->
-
-
 
         <section class="informacoes" id="informacoes"> <!--inicio da seção de contato-->
 
             <div class="card-inf1"> <!--sobre-->
-                <h1>Sobre nós</h1>
-                <p>O Restaurante <strong>Reduto Social, </strong>nasceu de anos de experiência do Chef de cozinha
-                    <strong>Moacir Laurentino de Souza </strong>e sua esposa <strong>Viviane Nunes Santos
-                    </strong>responsável pela administração do negócio.<br><br> O casal chegou a ter <strong>três
-                        restaurantes simultaneamente. </strong>Vislumbrando uma oportunidade de negócios, eles
-                    resolveram fechar todos os pontos e abrir em um novo local. Com um investimento muito maior.<br><br>
-                    Após 6 anos da abertura do restaurente situado na Palhoça, conseguiram ser um dos <strong>mais
-                        requisitados </strong>em toda região. A comida com temperos e receitas caseiras chama atenção de
-                    pessoas de toda a <strong>Grande Florianópolis.</strong>
-                </p>
+                <div>
+                    <h1>Sobre nós</h1>
+
+                </div>
+                <div>
+
+
+                    <p>O Restaurante <strong>Reduto Social, </strong>nasceu de anos de experiência do Chef de cozinha
+                        <strong>Moacir Laurentino de Souza </strong>e sua esposa <strong>Viviane Nunes Santos
+                        </strong>responsável pela administração do negócio.<br><br> O casal chegou a ter <strong>três
+                            restaurantes simultaneamente. </strong>Vislumbrando uma oportunidade de negócios, eles
+                        resolveram fechar todos os pontos e abrir em um novo local. Com um investimento muito
+                        maior.<br><br>
+                        Após 6 anos da abertura do restaurente situado na Palhoça, conseguiram ser um dos <strong>mais
+                            requisitados </strong>em toda região. A comida com temperos e receitas caseiras chama
+                        atenção de
+                        pessoas de toda a <strong>Grande Florianópolis.</strong>
+                    </p>
+                </div>
             </div>
 
             <div class="card-inf2"></div> <!--foto-->
 
-            <div class="card-inf3"> <!--contato-->
+            <div class="card-inf3" id="contatos"> <!--contato-->
                 <h1>Contato</h1>
 
                 <a href="https://www.facebook.com/redutosocial/" target="_blank" class="botoesMidia"><input
@@ -273,13 +338,13 @@
                     <section class="wrapper">
                         <i class="fa-solid fa-arrow-left button" id="prev"></i>
                         <div class="image-container">
-                            <div class="carousel">
-                                <img src="img/5 motivos.png" alt="" loading="lazy" />
-                                <img src="img/1 - estacionamento.jpg" alt="" loading="lazy" />
-                                <img src="img/2 - ambiente climatizado.jpg" alt="" loading="lazy" />
-                                <img src="img/3 - ambiente .jpg" alt="" loading="lazy" />
-                                <img src="img/4 - Comida caseira.jpg" alt="" loading="lazy" />
-                                <img src="img/5 - sobremessas.jpg" alt="" loading="lazy" />
+                            <div class="carousel" loading="lazy">
+                                <img src="img/5 motivos.png" alt=""  />
+                                <img src="img/1 - estacionamento.jpg" alt=""  />
+                                <img src="img/2 - ambiente climatizado.jpg" alt=""  />
+                                <img src="img/3 - ambiente .jpg" alt="" />
+                                <img src="img/4 - Comida caseira.jpg" alt="" />
+                                <img src="img/5 - sobremessas.jpg" alt=""  />
                             </div>
                             <i class="fa-solid fa-arrow-right button" id="next"></i>
                         </div>
@@ -304,6 +369,8 @@
         </section>
     </footer> <!--fim do rodapé-->
 
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
